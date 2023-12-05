@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+    display: grid;
+    grid-template-areas:
+      "h h h"
+      "a a as"
+      "a a as"
+      "f f f";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; /* Adjust as needed */
+  }
+
+.App-article {
+  grid-area: a;
+}
+
+.App-aside {
+  grid-area: as;
+}
+
+.App-footer {
+  grid-area: f;
+}
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  grid-area: h;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.termekek-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kutya-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.kutya-card img {
+  max-width: 100%;
+  height: auto;
+}
+.kutya-card button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.kutya-card button:hover {
+  background-color: #45a049;
+}
+.App-aside .kutya-card {
+  /* Adjust the styling as needed for the cart */
+  max-width: 100%; /* Adjust the width to fit the aside section */
+  margin: 10px 0;
+}
+.kutya-card button.remove-btn {
+  background-color: #ff4444; /* Red color for the remove button */
+  color: white;
+  /* Other styling as required */
+}
+
+.kutya-card button.remove-btn:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
